@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="MiClaroWeb" verbose="1">
+		<parameter name="Country" value="NA"></parameter>
+		<test name="Login">
+			<classes>
+				<class name="com.claro.miclaroweb.test.Login">				
+				</class>
+			</classes>
+		</test>
+</suite>
