@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <locators>	
 	
-	<parameter name="t1XpathPagos" value="//a[@id='Pago-Factura-503']"/>
+	<parameter name="t1XpathPagos" value=".DesktopCards #Pago-Factura-503 .cIco-landing"/>
 	
 </locators>

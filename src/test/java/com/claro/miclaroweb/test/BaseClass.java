@@ -18,6 +18,7 @@ public class BaseClass extends SeleniumMain {
 		ChromeOptions options = new ChromeOptions();
 		options.setPageLoadStrategy(PageLoadStrategy.EAGER);
 		driver = GetWebInstance(options);
+		driver.manage().window().maximize();
 		SuiteName=context.getSuite().getName();
 		report = ExtentManager.getReporter(SuiteName+"ExtendsReport-ClaroClub.html");
 	}

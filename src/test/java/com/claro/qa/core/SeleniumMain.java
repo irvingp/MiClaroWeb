@@ -53,6 +53,20 @@ public class SeleniumMain {
 			  System.out.println(ex.getStackTrace());			
 		}
 	}
+	public void WaitToClikByCssSelector(String targetResourceXpath , long timeLimitInSeconds)
+	{
+		try {
+			
+			@SuppressWarnings("deprecation")
+			WebDriverWait wait = new WebDriverWait(driver, timeLimitInSeconds);
+			wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector(targetResourceXpath)));
+			
+		} catch (Exception ex) {	
+			  System.out.println("Message is: " + ex.getMessage());
+			  System.out.println("Cause is: " + ex.getCause());
+			  System.out.println(ex.getStackTrace());			
+		}
+	}
 	
 	public void TakeScreenShot(String FileName)
 	{

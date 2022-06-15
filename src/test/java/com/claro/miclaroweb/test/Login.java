@@ -29,18 +29,12 @@ public class Login extends BaseClass{
 		for(Parameter icono : icons)
 		{
 			test.log(LogStatus.INFO, "Verificar que existe el enlace: " + icono.getValue());
-			WaitToClikByXpath(icono.getValue(), 10);
+			WaitToClikByCssSelector(icono.getValue(), 10);
 			
-			WebElement element = driver.findElement(By.xpath(icono.getValue()));
+			WebElement element = driver.findElement(By.cssSelector(icono.getValue()));
 			Actions actions = new Actions(driver);
 			actions.moveToElement(element).click().build().perform();
-			
-			Assert.assertEquals(driver.getTitle(), "MI PAGO CLARO");
-			/*
-			 * if(driver.findElement(By.xpath(icono.getValue())).isDisplayed()) {
-			 * click(By.xpath(icono.getValue())); }else { test.log(LogStatus.FAIL,
-			 * "No se encontró el enlace"); }
-			 */
+
 			
 		}
 	}
