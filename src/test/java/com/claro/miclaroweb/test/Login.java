@@ -3,9 +3,7 @@ package com.claro.miclaroweb.test;
 import java.util.List;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
-import org.testng.Assert;
+import org.openqa.selenium.Keys;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -19,23 +17,43 @@ public class Login extends BaseClass{
 	public void init()
 	{
 		driver.get("https://miclaroni-uat-v3.tmx-internacional.com/login");
+		OriginalWindows = driver.getWindowHandle();
 		test = report.startTest("Login");
 	}
 	
-	@Test(priority=0, dataProvider="IconTestProvider", dataProviderClass=LoginProvider.class)
+	@Test(priority=0, dataProvider="IconTestProvider", dataProviderClass=LoginProvider.class, enabled = false)
 	public void IconTest(List<Parameter> icons) throws InterruptedException
 	{
 		test.log(LogStatus.INFO, "Probar iconos");
+		int count=0;
 		for(Parameter icono : icons)
 		{
 			test.log(LogStatus.INFO, "Verificar que existe el enlace: " + icono.getValue());
-			WaitToClikByCssSelector(icono.getValue(), 10);
+			WaitToClikByXpath(icono.getValue(), 10);		  
+			driver.findElement(By.xpath(icono.getValue())).sendKeys(Keys.ENTER);
 			
-			WebElement element = driver.findElement(By.cssSelector(icono.getValue()));
-			Actions actions = new Actions(driver);
-			actions.moveToElement(element).click().build().perform();
-
+			  test.log(LogStatus.INFO, "Verifica enlace: " + String.valueOf(count));
+			  //TakeScreenShot("Icon_"+ String.valueOf(count));
+			  time.sleep(2);
+			  SwitchToOriginalWindows();
 			
+			
+			count++;
 		}
+	}
+	
+	@Test(priority= 1, dataProvider="IconModalTestProvider", dataProviderClass=LoginProvider.class)
+	public void IconModalTest(String XpathDescargaFactura, String XpathFormularioFactura) throws InterruptedException
+	{
+		test.log(LogStatus.INFO, "Verificar enlace con modal");
+		WaitToClikByXpath(XpathDescargaFactura, 10);		  
+		driver.findElement(By.xpath(XpathDescargaFactura)).sendKeys(Keys.ENTER);
+		
+		WaitToClikByXpath(XpathDescargaFactura, 10);		  
+		driver.findElement(By.xpath(XpathFormularioFactura)).sendKeys(Keys.ENTER);
+		
+		time.sleep(4);
+		
+		
 	}
 }

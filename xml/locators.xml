@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <locators>	
 	
-	<parameter name="t1XpathPagos" value=".DesktopCards #Pago-Factura-503 .cIco-landing"/>
+	<parameter name="t1XpathPagos" value="//a[@id='Pago-Factura-503']"/>
+	<parameter name="t1XpathRecargas" value="//a[@id='Compra-Recargas-Superpacks-503']"/>
+<!-- 	<parameter name="t1XpathContratoServicio" value="//a[@id='Contrato-Servicio-505']"></parameter> -->
+	<parameter name="t1XpathContratoServicio" value="//a[@id='Descaga-Mi-Claro-App-505']"></parameter>
 	
-</locators>
+	<parameter name="t2XpathDescargarFactura" value="//a[@id='Descarga-Factura-505']"/>
+	<parameter name="t2XpathFormularioFactura" value="//a[@id='factura-hogar-505']"/>
+</locators>	

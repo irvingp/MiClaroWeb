@@ -20,4 +20,16 @@ public class LoginProvider extends Provider{
 					}
 				};
 	}
+	@DataProvider(name = "IconModalTestProvider")
+	public static Object[][] IconModalTestProvider() throws JAXBException
+	{
+		return new Object[][]
+				{
+					{
+						GetParamLocatorsByName("t2XpathDescargarFactura").getValue(),
+						GetParamLocatorsByName("t2XpathFormularioFactura").getValue()
+						
+					}
+				};
+	}
 }
