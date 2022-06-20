@@ -23,7 +23,7 @@
 	<parameter name="t4XpathIngresar"  value="//a[@class='btn btnBlancoRojo']"/>
 	
 	<parameter name="t5XpathEmail" value="//input[@name='email']"/>
-	<parameter name="t5XpathContraseña"  value="//input[@name='password']"/>
+	<parameter name="t5XpathContrasena"  value="//input[@name='password']"/>
 	<parameter name="t5XpathLogin" value="//input[@class='btn btnPrimario']"/>
 	<parameter name="t5XpathCerrar" value="//button[@class='swal2-close']"/>
 	

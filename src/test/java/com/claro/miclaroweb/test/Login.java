@@ -22,15 +22,15 @@ public class Login extends BaseClass{
 	}
 	
 	 @Test(priority = 0, dataProvider="LoginTestProvider", dataProviderClass=LoginProvider.class)
-		public void LoginTestProvider(String t5XpathEmail,String t5XpathContraseña,String t5XpathLogin,String t5XpathCerrar,String email,String password) throws  InterruptedException{
+		public void LoginTestProvider(String t5XpathEmail,String t5XpathContrasena,String t5XpathLogin,String t5XpathCerrar,String email,String password) throws  InterruptedException{
 			test.log(LogStatus.INFO,"Verificar la existencia del campo email" );
 			WaitToClikByXpath(t5XpathEmail,10);
 			driver.findElement(By.xpath(t5XpathEmail)).sendKeys(email);
 			time.sleep(2);
 			
 			test.log(LogStatus.INFO,"Verificar la existencia del campo contraseña" );
-			WaitToClikByXpath(t5XpathContraseña,10);
-			driver.findElement(By.xpath(t5XpathContraseña)).sendKeys(password);
+			WaitToClikByXpath(t5XpathContrasena,10);
+			driver.findElement(By.xpath(t5XpathContrasena)).sendKeys(password);
 			time.sleep(2);
 			
 			test.log(LogStatus.INFO,"Verificar la existencia del boton ingresar" );

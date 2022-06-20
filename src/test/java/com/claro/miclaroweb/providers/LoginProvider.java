@@ -53,7 +53,7 @@ public class LoginProvider extends Provider{
 		return new Object[][] {
 			{
 				GetParamLocatorsByName("t5XpathEmail").getValue(),
-				GetParamLocatorsByName("t5XpathContraseña").getValue(),
+				GetParamLocatorsByName("t5XpathContrasena").getValue(),
 				GetParamLocatorsByName("t5XpathLogin").getValue(),
 				GetParamLocatorsByName("t5XpathCerrar").getValue(),
 				GetParamDataByName("email").getValue(),
