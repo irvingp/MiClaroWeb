@@ -48,21 +48,12 @@ public class LoginProvider extends Provider{
 					}
 				};
 	}
-	@DataProvider(name = "ButtonTestProvider")
-	public static Object[][] ButtonTestProvider() throws JAXBException{
-		return new Object[][] {
-			{
-				GetParamLocatorsByName("t4XpathOlvideContraseña").getValue(),
-				GetParamLocatorsByName("t4XpathIngresar").getValue()
-			}
-		};
-	}
 	@DataProvider(name = "LoginTestProvider")
 	public static Object[][] LoginTestProvider() throws JAXBException{
 		return new Object[][] {
 			{
 				GetParamLocatorsByName("t5XpathEmail").getValue(),
-				GetParamLocatorsByName("t5XpathContraseña").getValue(),
+				GetParamLocatorsByName("t5XpathContrasena").getValue(),
 				GetParamLocatorsByName("t5XpathLogin").getValue(),
 				GetParamLocatorsByName("t5XpathCerrar").getValue(),
 				GetParamDataByName("email").getValue(),
