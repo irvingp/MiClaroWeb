@@ -20,7 +20,8 @@
 	<parameter name="t3XpathCasaMegas" value="//a[@id='Casa-Megas-505']"/>
 	
 	<parameter name="t4XpathOlvideContraseña" value="//a[@class='textLink']"/>
-	<parameter name="t4XpathIngresar"  value="//a[@class='btn btnBlancoRojo']"/>
+	<parameter name="t4XpathEmail" value="//input[@name='email']"/>
+	<parameter name="t4XpathAceptar" value="//button[@class='btn btnBlancoRojo']"/>
 	
 	<parameter name="t5XpathEmail" value="//input[@name='email']"/>
 	<parameter name="t5XpathContraseña"  value="//input[@name='password']"/>
