@@ -23,11 +23,12 @@ public class ForgotPassword extends BaseClass {
 		test.log(LogStatus.INFO,"Verificar la existencia del boton de olvide contrasena" );
 		WaitToClikByXpath(t4XpathOlvideContrasena,10);
 		driver.findElement(By.xpath(t4XpathOlvideContrasena)).click();
-		time.sleep(2);	
+		time.sleep(3);	
 		test.log(LogStatus.INFO,"Verificar la existencia del modal" );
 		WaitToClikByXpath(t4XpathEmail,10);
 		driver.findElement(By.xpath(t4XpathEmail)).sendKeys(email);
-		time.sleep(2);	
+		TakeScreenShot("Login_17");	
+		time.sleep(3);	
 		test.log(LogStatus.INFO,"Verificar la existencia del boton de aceptar" );
 		WaitToClikByXpath(t4XpathAceptar,10);
 		driver.findElement(By.xpath(t4XpathAceptar)).click();
