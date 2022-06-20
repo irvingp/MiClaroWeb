@@ -7,8 +7,7 @@
 				</class>
 			</classes>
 		</test>
-		<parameter name="Country" value="NA"></parameter>
-		<test name="Recuperar Contraseña">
+		<test name="Recuperar Contrasena">
 			<classes>
 				<class name="com.claro.miclaroweb.test.ForgotPassword">				
 				</class>
