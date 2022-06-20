@@ -21,7 +21,7 @@ public class Login extends BaseClass{
 		test = report.startTest("Login");
 	}
 	
-	@Test(priority=0, dataProvider="IconTestProvider", dataProviderClass=LoginProvider.class, enabled = false)
+	@Test(priority=0, dataProvider="IconTestProvider", dataProviderClass=LoginProvider.class, enabled = true)
 	public void IconTest(List<Parameter> icons) throws InterruptedException
 	{
 		test.log(LogStatus.INFO, "Probar iconos");
@@ -31,18 +31,18 @@ public class Login extends BaseClass{
 			test.log(LogStatus.INFO, "Verificar que existe el enlace: " + icono.getValue());
 			WaitToClikByXpath(icono.getValue(), 10);		  
 			driver.findElement(By.xpath(icono.getValue())).sendKeys(Keys.ENTER);
-			
-			  test.log(LogStatus.INFO, "Verifica enlace: " + String.valueOf(count));
-			  //TakeScreenShot("Icon_"+ String.valueOf(count));
-			  time.sleep(2);
-			  SwitchToOriginalWindows();
+			time.sleep(1);
+			test.log(LogStatus.INFO, "Verifica enlace: " + String.valueOf(count));
+			TakeScreenShot("Icon_"+ String.valueOf(count));
+			  
+			SwitchToOriginalWindows();
 			
 			
 			count++;
 		}
 	}
 	
-	@Test(priority= 1, dataProvider="IconModalTestProvider", dataProviderClass=LoginProvider.class)
+	@Test(priority= 1, dataProvider="IconModalTestProvider", dataProviderClass=LoginProvider.class, enabled=false)
 	public void IconModalTest(String XpathDescargaFactura, String XpathFormularioFactura) throws InterruptedException
 	{
 		test.log(LogStatus.INFO, "Verificar enlace con modal");

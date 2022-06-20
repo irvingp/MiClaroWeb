@@ -27,7 +27,7 @@ public class LoginProvider extends Provider{
 				{
 					{
 						GetParamLocatorsByName("t2XpathDescargarFactura").getValue(),
-						GetParamLocatorsByName("t2XpathFormularioFactura").getValue()
+						GetParamLocatorsByName("t2XpathFormularioFactura").getValue(),
 						
 					}
 				};

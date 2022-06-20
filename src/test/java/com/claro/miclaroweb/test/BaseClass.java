@@ -16,7 +16,7 @@ public class BaseClass extends SeleniumMain {
 	public void BeforeSuite(ITestContext context)
 	{
 		ChromeOptions options = new ChromeOptions();
-		options.setPageLoadStrategy(PageLoadStrategy.EAGER);
+		options.setPageLoadStrategy(PageLoadStrategy.NORMAL);
 		driver = GetWebInstance(options);
 		driver.manage().window().maximize();
 		SuiteName=context.getSuite().getName();
