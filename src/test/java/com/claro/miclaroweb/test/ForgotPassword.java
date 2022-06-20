@@ -19,10 +19,10 @@ public class ForgotPassword extends BaseClass {
 		test = report.startTest("Recuperar Contraseña");
 	}
 	@Test(priority = 6, dataProvider="ButtonTestProvider", dataProviderClass=ForgotPasswordProvider.class)
-	public void ButtonTestProvider(String t4XpathOlvideContraseña,String t4XpathEmail,String t4XpathAceptar,String email) throws  InterruptedException{
+	public void ButtonTestProvider(String t4XpathOlvideContrasena,String t4XpathEmail,String t4XpathAceptar,String email) throws  InterruptedException{
 		test.log(LogStatus.INFO,"Verificar la existencia del boton de olvide contraseña" );
-		WaitToClikByXpath(t4XpathOlvideContraseña,10);
-		driver.findElement(By.xpath(t4XpathOlvideContraseña)).click();
+		WaitToClikByXpath(t4XpathOlvideContrasena,10);
+		driver.findElement(By.xpath(t4XpathOlvideContrasena)).click();
 		time.sleep(2);	
 		test.log(LogStatus.INFO,"Verificar la existencia del modal" );
 		WaitToClikByXpath(t4XpathEmail,10);

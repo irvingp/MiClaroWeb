@@ -12,7 +12,7 @@ public class ForgotPasswordProvider extends Provider {
 	public static Object[][] ButtonTestProvider() throws JAXBException{
 		return new Object[][] {
 			{
-				GetParamLocatorsByName("t4XpathOlvideContraseña").getValue(),
+				GetParamLocatorsByName("t4XpathOlvideContrasena").getValue(),
 				GetParamLocatorsByName("t4XpathEmail").getValue(),
 				GetParamLocatorsByName("t4XpathAceptar").getValue(),
 				GetParamDataByName("email").getValue()
