@@ -68,6 +68,13 @@ public class SeleniumMain {
 
 	public void TakeScreenShot( String FileName) {
 
+		if(driver.getWindowHandles().size()!=1){
+			for(String window : driver.getWindowHandles()) {
+				if(!window.contentEquals(OriginalWindows)) {
+					driver.switchTo().window(window);
+				}
+			}
+		}
 		File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		try {
 			FileUtils.copyFile(scrFile, new File("ScreenShot/" + SuiteName + "_" + FileName + ".png"));

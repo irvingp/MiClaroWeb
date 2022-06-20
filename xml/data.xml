@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <data>
 	<parameter name="1_icono" value="MI PAGO CLARO"/>
-	
-	 
+	<parameter name="email" value="wil.josem39@gmail.com"/>
+	<parameter name="password" value="12345678"/>
 </data>

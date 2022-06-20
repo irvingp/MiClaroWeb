@@ -20,7 +20,7 @@ public class BaseClass extends SeleniumMain {
 		driver = GetWebInstance(options);
 		driver.manage().window().maximize();
 		SuiteName=context.getSuite().getName();
-		report = ExtentManager.getReporter(SuiteName+"ExtendsReport-ClaroClub.html");
+		report = ExtentManager.getReporter(SuiteName+"ExtendsReport-MiClaroWeb.html");
 	}
 	
 	@AfterMethod
