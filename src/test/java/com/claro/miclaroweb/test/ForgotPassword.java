@@ -1,12 +1,11 @@
 package com.claro.miclaroweb.test;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
+import org.openqa.selenium.JavascriptExecutor;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import com.claro.miclaroweb.providers.ForgotPasswordProvider;
-import com.claro.miclaroweb.providers.LoginProvider;
 import com.relevantcodes.extentreports.LogStatus;
 
 public class ForgotPassword extends BaseClass {
@@ -27,11 +26,16 @@ public class ForgotPassword extends BaseClass {
 		test.log(LogStatus.INFO,"Verificar la existencia del modal" );
 		WaitToClikByXpath(t4XpathEmail,10);
 		driver.findElement(By.xpath(t4XpathEmail)).sendKeys(email);
-		TakeScreenShot("Login_16");	
+		TakeScreenShot("Login_16");
 		time.sleep(3);	
 		test.log(LogStatus.INFO,"Verificar la existencia del boton de aceptar" );
 		WaitToClikByXpath(t4XpathAceptar,10);
 		driver.findElement(By.xpath(t4XpathAceptar)).click();
-		time.sleep(10);			
+		time.sleep(5);
+		
+		JavascriptExecutor js = (JavascriptExecutor)driver;
+		js.executeScript("window.open('https://www.google.com/intl/es/gmail/about/');");
+		time.sleep(5);
+		
 	}
 }
