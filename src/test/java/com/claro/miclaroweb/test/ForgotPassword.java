@@ -32,8 +32,6 @@ public class ForgotPassword extends BaseClass {
 		test.log(LogStatus.INFO,"Verificar la existencia del boton de aceptar" );
 		WaitToClikByXpath(t4XpathAceptar,10);
 		driver.findElement(By.xpath(t4XpathAceptar)).click();
-		time.sleep(10);	
-		
-		
+		time.sleep(10);			
 	}
 }
