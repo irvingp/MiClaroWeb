@@ -48,18 +48,31 @@ public class Login extends BaseClass{
 			WaitToClikByXpath(t6XpathVentanaBot,10);
 			driver.findElement(By.xpath(t6XpathVentanaBot)).click();
 			time.sleep(3);
+			TakeScreenShot("Login_2");
 			
 			test.log(LogStatus.INFO,"Verificar la existencia del enlace al bot" );
 			WaitToClikByXpath(t6XpathVentanaBot,10);
 			driver.findElement(By.xpath(t6XpathBot)).click();
-			time.sleep(3);			SwitchToOriginalWindows();
-			TakeScreenShot("Login_2");
+			time.sleep(3);
+			SwitchToOriginalWindows();
 			
 			test.log(LogStatus.INFO,"Verificar la existencia del cierre de la ventana" );
 			WaitToClikByXpath(t6XpathVentanaBot,10);
 			driver.findElement(By.xpath(t6XpathCerrarBot)).click();
 			time.sleep(3);			
 		}
+	  @Test(priority=2, dataProvider="IconTestProvider",dataProviderClass=LoginProvider.class) public void IconTest(List<Parameter>
+			  icons) throws InterruptedException { test.log(LogStatus.INFO,
+			  "Probar iconos"); int count=0; for(Parameter icono : icons) {
+			  test.log(LogStatus.INFO, "Verificar que existe el enlace: " +
+			  icono.getValue()); WaitToClikByXpath(icono.getValue(), 10);
+			  driver.findElement(By.xpath(icono.getValue())).sendKeys(Keys.ENTER);
+			  time.sleep(2);
+			  test.log(LogStatus.INFO, "Verifica enlace: " + String.valueOf(count));
+			  TakeScreenShot("Icon_"+ String.valueOf(count));
+			  SwitchToOriginalWindows();  
+			  count++; } 
+			  }
 	  @Test(priority= 3, dataProvider="IconModalTestProvider2", dataProviderClass=LoginProvider.class)		
 		public void IconModalTest2(String t3XpathContratarServicio, String t3XpathCotizador,String t3XpathCasaMegas) throws InterruptedException
 		{
@@ -70,8 +83,8 @@ public class Login extends BaseClass{
 			
 			WaitToClikByXpath(t3XpathContratarServicio, 10);		  
 			driver.findElement(By.xpath(t3XpathCotizador)).sendKeys(Keys.ENTER);
-			TakeScreenShot("Login_12");
 			time.sleep(3);
+			TakeScreenShot("Login_13");
 			
 			SwitchToOriginalWindows();
 			
@@ -82,8 +95,8 @@ public class Login extends BaseClass{
 			
 			WaitToClikByXpath(t3XpathContratarServicio, 10);		  
 			driver.findElement(By.xpath(t3XpathCasaMegas)).sendKeys(Keys.ENTER);
-			TakeScreenShot("Login_13");
 			time.sleep(3);
+			TakeScreenShot("Login_14");
 			SwitchToOriginalWindows();
 		}
 		@Test(priority= 4, dataProvider="IconModalTestProvider", dataProviderClass=LoginProvider.class)
@@ -97,8 +110,8 @@ public class Login extends BaseClass{
 			test.log(LogStatus.INFO, "Verificar enlace con modal");
 			WaitToClikByXpath(XpathDescargaFactura, 10);		  
 			driver.findElement(By.xpath(XpathFormularioFactura)).sendKeys(Keys.ENTER);
-			TakeScreenShot("Login_14");
 			time.sleep(3);
+			TakeScreenShot("Login_15");
 			SwitchToOriginalWindows();
 		}
 }

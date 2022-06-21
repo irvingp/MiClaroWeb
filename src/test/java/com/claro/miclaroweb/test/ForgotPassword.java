@@ -27,7 +27,7 @@ public class ForgotPassword extends BaseClass {
 		test.log(LogStatus.INFO,"Verificar la existencia del modal" );
 		WaitToClikByXpath(t4XpathEmail,10);
 		driver.findElement(By.xpath(t4XpathEmail)).sendKeys(email);
-		TakeScreenShot("Login_17");	
+		TakeScreenShot("Login_16");	
 		time.sleep(3);	
 		test.log(LogStatus.INFO,"Verificar la existencia del boton de aceptar" );
 		WaitToClikByXpath(t4XpathAceptar,10);
