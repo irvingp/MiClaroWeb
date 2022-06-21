@@ -13,4 +13,16 @@
 				</class>
 			</classes>
 		</test>
+		<test name="Iconos">
+			<classes>
+				<class name="com.claro.miclaroweb.test.IconTest">				
+				</class>
+			</classes>
+		</test>
+		<test name="Bot">
+			<classes>
+				<class name="com.claro.miclaroweb.test.Bot">				
+				</class>
+			</classes>
+		</test>
 </suite>

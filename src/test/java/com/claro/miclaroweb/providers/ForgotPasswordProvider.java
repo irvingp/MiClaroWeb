@@ -15,7 +15,10 @@ public class ForgotPasswordProvider extends Provider {
 				GetParamLocatorsByName("t4XpathOlvideContrasena").getValue(),
 				GetParamLocatorsByName("t4XpathEmail").getValue(),
 				GetParamLocatorsByName("t4XpathAceptar").getValue(),
-				GetParamDataByName("email").getValue()
+				GetParamLocatorsByName("t7XpathTexto").getValue(),
+				GetParamDataByName("email").getValue(),
+				GetParamLocatorsByName("GmailButton").getValue(),
+				GetParamLocatorsByName("GmailCorreo").getValue()
 				
 			}
 		};

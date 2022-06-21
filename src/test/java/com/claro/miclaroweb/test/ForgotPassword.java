@@ -1,7 +1,9 @@
 package com.claro.miclaroweb.test;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.WindowType;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -19,19 +21,40 @@ public class ForgotPassword extends BaseClass {
 		test = report.startTest("Recuperar Contrasena");
 	}
 	@Test(priority = 1, dataProvider="ButtonTestProvider", dataProviderClass=ForgotPasswordProvider.class)
-	public void ButtonTestProvider(String t4XpathOlvideContrasena,String t4XpathEmail,String t4XpathAceptar,String email) throws  InterruptedException{
+	public void ButtonTestProvider(String t4XpathOlvideContrasena,String t4XpathEmail,String t4XpathAceptar,String t7XpathTexto,String email,String GmailButton,String GmailCorreo) throws  InterruptedException{
 		test.log(LogStatus.INFO,"Verificar la existencia del boton de olvide contrasena" );
 		WaitToClikByXpath(t4XpathOlvideContrasena,10);
 		driver.findElement(By.xpath(t4XpathOlvideContrasena)).click();
-		time.sleep(3);	
+		time.sleep(3);
+		
 		test.log(LogStatus.INFO,"Verificar la existencia del modal" );
 		WaitToClikByXpath(t4XpathEmail,10);
 		driver.findElement(By.xpath(t4XpathEmail)).sendKeys(email);
 		TakeScreenShot("Login_16");	
-		time.sleep(3);	
+		time.sleep(3);
+		
 		test.log(LogStatus.INFO,"Verificar la existencia del boton de aceptar" );
 		WaitToClikByXpath(t4XpathAceptar,10);
 		driver.findElement(By.xpath(t4XpathAceptar)).click();
-		time.sleep(10);			
+		time.sleep(3);
+		
+		test.log(LogStatus.INFO,"Verificar la existencia del boton de aceptar" );
+		WaitToClikByXpath(t7XpathTexto,10);
+		driver.findElement(By.xpath(t7XpathTexto)).click();
+		time.sleep(3);
+			
+		driver.switchTo().newWindow(WindowType.TAB);
+		driver.get("https://www.gmail.com/mail/help/intl/es/about.html?iframe");	
+		
+		test.log(LogStatus.INFO,"Verificar la existencia del boton de aceptar" );
+		WaitToClikByXpath(GmailButton,10);
+		driver.findElement(By.xpath(GmailButton)).click(); 
+		time.sleep(3);
+		  
+		test.log(LogStatus.INFO,"Verificar la existencia del boton de aceptar" );
+		WaitToClikByXpath(GmailCorreo,10);
+		driver.findElement(By.xpath(GmailCorreo)).sendKeys(email,Keys.ENTER);
+		SwitchToOriginalWindows();
+		time.sleep(3);
 	}
 }

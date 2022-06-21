@@ -32,4 +32,14 @@
 	<parameter name="t6XpathBot"  value="//div[@class='cChatbotItems']"/>
 	<parameter name="t6XpathCerrarBot" value="//i[@class='cChatbotAction ico-x']"/>
 	
+	<parameter name="t7XpathButtonRegister" value="//a[@class='btn btnBlancoRojo']"/>
+	<parameter name="t7XpathEmail" value="//input[@name='email']"/>
+	<parameter name="t7XpathCheck" value="//div[@class='checkmark']"/>
+	<parameter name="t7XpathSubmit" value="//input[@class='btn btnBlancoRojo btnContinuar']"/>
+	<parameter name="t7XpathTexto" value="//div[@class='customLitteFormText']//h2[text()='Código de seguridad']"/>
+	
+	<parameter name="GmailButton" value="//a[@id='gmail-sign-in']"/>
+	<parameter name="GmailCorreo" value="//input[@class='whsOnd zHQkBf']"/>
+	<parameter name="GmailNext" value="//div[@class='VfPpkd-RLmnJb']"/>
+	
 </locators>	
