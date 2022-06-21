@@ -16,18 +16,19 @@ public class ForgotPassword extends BaseClass {
 	{
 		driver.get("https://miclaroni-uat-v3.tmx-internacional.com/login");
 		OriginalWindows = driver.getWindowHandle();//Toma el valor de la pagina del login y lo guarda en una variable llamada original window
-		test = report.startTest("Recuperar Contraseña");
+		test = report.startTest("Recuperar Contrasena");
 	}
-	@Test(priority = 6, dataProvider="ButtonTestProvider", dataProviderClass=ForgotPasswordProvider.class)
+	@Test(priority = 1, dataProvider="ButtonTestProvider", dataProviderClass=ForgotPasswordProvider.class)
 	public void ButtonTestProvider(String t4XpathOlvideContrasena,String t4XpathEmail,String t4XpathAceptar,String email) throws  InterruptedException{
-		test.log(LogStatus.INFO,"Verificar la existencia del boton de olvide contraseña" );
+		test.log(LogStatus.INFO,"Verificar la existencia del boton de olvide contrasena" );
 		WaitToClikByXpath(t4XpathOlvideContrasena,10);
 		driver.findElement(By.xpath(t4XpathOlvideContrasena)).click();
-		time.sleep(2);	
+		time.sleep(3);	
 		test.log(LogStatus.INFO,"Verificar la existencia del modal" );
 		WaitToClikByXpath(t4XpathEmail,10);
 		driver.findElement(By.xpath(t4XpathEmail)).sendKeys(email);
-		time.sleep(2);	
+		TakeScreenShot("Login_17");	
+		time.sleep(3);	
 		test.log(LogStatus.INFO,"Verificar la existencia del boton de aceptar" );
 		WaitToClikByXpath(t4XpathAceptar,10);
 		driver.findElement(By.xpath(t4XpathAceptar)).click();
