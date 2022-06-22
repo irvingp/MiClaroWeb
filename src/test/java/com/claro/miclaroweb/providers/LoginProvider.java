@@ -15,7 +15,6 @@ public class LoginProvider extends Provider{
 				GetParamLocatorsByName("t5XpathEmail").getValue(),
 				GetParamLocatorsByName("t5XpathContrasena").getValue(),
 				GetParamLocatorsByName("t5XpathLogin").getValue(),
-				GetParamLocatorsByName("t5XpathCerrar").getValue(),
 				GetParamDataByName("email").getValue(),
 				GetParamDataByName("password").getValue()
 			}

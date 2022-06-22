@@ -26,8 +26,32 @@
 	<parameter name="t5XpathEmail" value="//input[@name='email']"/>
 	<parameter name="t5XpathContrasena"  value="//input[@name='password']"/>
 	<parameter name="t5XpathLogin" value="//input[@class='btn btnPrimario']"/>
+	
+	<parameter name="t5XpathAncla1" value="//a[@class='ancla1' and text()='Mi Perfil']"/>
+	<parameter name="t5XpathDatosPerfil" value="//a[@class='Link-item link' and text()='Datos de perfil']"/>
+	<parameter name="t5XpathNombre" value="//input[@name='nombreCompleto']"/>
 	<parameter name="t5XpathCerrar" value="//button[@class='swal2-close']"/>
 	
+	<parameter name="t5XpathGuardar" value="//button[@class='btn btnPrimario']"/>
+	<parameter name="t5XpathTextDatosPerfil" value="//div[@class='dashFormBox']//h3[text()='Mis datos de perfil']"/>
+	<parameter name="t5XpathTextNombres" value="//div[@class='dashFormBox']//label[text()='Nombre y Apellido:']"/>
+	<parameter name="t5XpathTextCorreo" value="//div[@class='dashFormBox']//label[text()='Correo electrónico:']"/>
+	<parameter name="t5XpathCorreo" value="//input[@name='UserProfileID']"/>
+	
+	<parameter name="t5XpathPassword" value="//a[@class='Link-item link' and text()='Cambiar contraseña']"/>
+	
+	<parameter name="t5XpathAncla2" value="//a[@class='ancla1' and text()='Mis Servicios']"/>
+	<parameter name="t5XpathServiciosMoviles" value="//a[@class='Link-item link' and text()='Servicios Móviles']"/>
+	<parameter name="t5XpathClaroHogar" value="//a[@class='Link-item link' and text()='Claro Hogar']"/>
+	<parameter name="t5XpathAncla3" value="//a[@class='ancla1' and text()='Pagos y Facturas']"/>
+	<parameter name="t5XpathFacturas" value="//a[@class='Link-item link' and text()='Mis facturas']"/>
+	<parameter name="t5XpathDebito" value="//a[@class='Link-item link' and text()='Débito Automático']"/>
+	<parameter name="t5XpathAncla4" value="//a[@class='ancla1' and text()='Mis Servicios']"/>
+	<parameter name="t5XpathRecargas" value="//a[@class='Link-item link' and text()='Recargas y Paquetes']"/>
+	<parameter name="t5XpathAncla5" value="//a[@class='ancla1' and text()='Pagos y Facturas']"/>
+	<parameter name="t5XpathTienda" value="//a[@class='Link-item link' and text()='Tiendas Claro']"/>
+	<parameter name="t5XpathAtencion" value="//a[@class='Link-item link' and text()='Canales de Atención']"/>
+
 	<parameter name="t6XpathVentanaBot" value="//a[@class='cChat']"/>
 	<parameter name="t6XpathBot"  value="//div[@class='cChatbotItems']"/>
 	<parameter name="t6XpathCerrarBot" value="//i[@class='cChatbotAction ico-x']"/>

@@ -7,21 +7,9 @@
 				</class>
 			</classes>
 		</test>
-		<test name="Recuperar Contrasena">
+		<test name="Profile">
 			<classes>
-				<class name="com.claro.miclaroweb.test.ForgotPassword">				
-				</class>
-			</classes>
-		</test>
-		<test name="Iconos">
-			<classes>
-				<class name="com.claro.miclaroweb.test.IconTest">				
-				</class>
-			</classes>
-		</test>
-		<test name="Bot">
-			<classes>
-				<class name="com.claro.miclaroweb.test.Bot">				
+				<class name="com.claro.miclaroweb.test.DataProfile">				
 				</class>
 			</classes>
 		</test>

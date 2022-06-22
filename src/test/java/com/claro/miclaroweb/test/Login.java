@@ -18,26 +18,18 @@ public class Login extends BaseClass{
 		test = report.startTest("Login");
 	}
 	@Test(priority = 0, dataProvider="LoginTestProvider", dataProviderClass=LoginProvider.class)
-	public void LoginTestProvider(String t5XpathEmail,String t5XpathContraseña,String t5XpathLogin,String t5XpathCerrar,String email,String password) throws  InterruptedException{
+	public void LoginTestProvider(String t5XpathEmail,String t5XpathContraseña,String t5XpathLogin,String email,String password) throws  InterruptedException{
 		test.log(LogStatus.INFO,"Verificar la existencia del modal" );
-		WaitToClikByXpath(t5XpathEmail,10);
+		WaitToClikByXpath(t5XpathEmail,20);
 		driver.findElement(By.xpath(t5XpathEmail)).sendKeys(email);
-		time.sleep(3);
 		
 		test.log(LogStatus.INFO,"Verificar la existencia del modal" );
-		WaitToClikByXpath(t5XpathContraseña,10);
+		WaitToClikByXpath(t5XpathContraseña,20);
 		driver.findElement(By.xpath(t5XpathContraseña)).sendKeys(password);
-		time.sleep(3);
 		
 		test.log(LogStatus.INFO,"Verificar la existencia del modal" );
-		WaitToClikByXpath(t5XpathLogin,10);
+		WaitToClikByXpath(t5XpathLogin,20);
 		driver.findElement(By.xpath(t5XpathLogin)).sendKeys(Keys.ENTER);
-		time.sleep(3);
 		TakeScreenShot("Login_1");
-		
-		test.log(LogStatus.INFO,"Verificar la existencia del modal" );
-		WaitToClikByXpath(t5XpathLogin,10);
-		driver.findElement(By.xpath(t5XpathCerrar)).sendKeys(Keys.ENTER);
-		time.sleep(3);
 	}
 }
