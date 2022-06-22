@@ -11,7 +11,14 @@ public class PasswordProvider extends Provider{
 	public static Object[][] PasswordFieldsProvider() throws JAXBException{
 		return new Object[][] {
 			{
-				
+				GetParamLocatorsByName("t5XpathPassword").getValue(),
+				GetParamLocatorsByName("t5XpathTextChangePassword").getValue(),
+				GetParamLocatorsByName("t5XpathFieldPass").getValue(),
+				GetParamLocatorsByName("t5XpathTextActualPass").getValue(),
+				GetParamLocatorsByName("t5XpathTextNewPass").getValue(),
+				GetParamLocatorsByName("t5XpathFieldNewPass").getValue(),
+				GetParamLocatorsByName("t5XpathTextConfirmPass").getValue(),
+				GetParamLocatorsByName("t5XpathConfirm").getValue()
 			}
 		};
 	}

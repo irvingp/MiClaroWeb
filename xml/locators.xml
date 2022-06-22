@@ -39,6 +39,13 @@
 	<parameter name="t5XpathCorreo" value="//input[@name='UserProfileID']"/>
 	
 	<parameter name="t5XpathPassword" value="//a[@class='Link-item link' and text()='Cambiar contraseña']"/>
+	<parameter name="t5XpathTextChangePassword" value="//div[@class='dashFormBox']//h3[text()='Cambiar contraseña']"/>
+	<parameter name="t5XpathFieldPass" value="//input[@name='PasswordF']"/>
+	<parameter name="t5XpathTextActualPass" value="//div[@class='dashFormBox']//label[text()='Contraseña actual:']"/>
+	<parameter name="t5XpathTextNewPass" value="//div[@class='dashFormBox']//label[text()='Ingresa tu nueva contraseña:']"/>
+	<parameter name="t5XpathFieldNewPass" value="//input[@name='NewPassword']"/>
+	<parameter name="t5XpathTextConfirmPass" value="//div[@class='dashFormBox']//label[text()='Confirma tu contraseña:']"/>
+	<parameter name="t5XpathConfirm" value="//input[@name='ValidatePassword']"/>
 	
 	<parameter name="t5XpathAncla2" value="//a[@class='ancla1' and text()='Mis Servicios']"/>
 	<parameter name="t5XpathServiciosMoviles" value="//a[@class='Link-item link' and text()='Servicios Móviles']"/>
