@@ -7,7 +7,19 @@ import org.testng.annotations.DataProvider;
 import com.claro.qa.core.Provider;
 
 public class IconTestProvider extends Provider {
- 		 		
+ 	
+	@DataProvider(name = "IconTestProvider") 
+	  public static Object[][] IconTestProvider() throws JAXBException { 
+		 return new Object[][] 
+				{
+				 	{
+				  			GetListLocatorsByParam("t1")
+		  
+				 	} 
+		  
+		 		}; 
+		 		
+	  }
 	@DataProvider(name = "IconModalTestProvider")
 	public static Object[][] IconModalTestProvider() throws JAXBException
 	{
