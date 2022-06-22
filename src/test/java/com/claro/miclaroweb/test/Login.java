@@ -18,16 +18,16 @@ public class Login extends BaseClass{
 		test = report.startTest("Login");
 	}
 	@Test(priority = 0, dataProvider="LoginTestProvider", dataProviderClass=LoginProvider.class)
-	public void LoginTestProvider(String t5XpathEmail,String t5XpathContraseña,String t5XpathLogin,String email,String password) throws  InterruptedException{
-		test.log(LogStatus.INFO,"Verificar la existencia del modal" );
+	public void LoginTestProvider(String t5XpathEmail,String t5XpathContrasena,String t5XpathLogin,String email,String password) throws  InterruptedException{
+		test.log(LogStatus.INFO,"Verificar la existencia del textfield Email" );
 		WaitToClikByXpath(t5XpathEmail,20);
 		driver.findElement(By.xpath(t5XpathEmail)).sendKeys(email);
 		
-		test.log(LogStatus.INFO,"Verificar la existencia del modal" );
-		WaitToClikByXpath(t5XpathContraseña,20);
-		driver.findElement(By.xpath(t5XpathContraseña)).sendKeys(password);
+		test.log(LogStatus.INFO,"Verificar la existencia del textfield Password" );
+		WaitToClikByXpath(t5XpathContrasena,20);
+		driver.findElement(By.xpath(t5XpathContrasena)).sendKeys(password);
 		
-		test.log(LogStatus.INFO,"Verificar la existencia del modal" );
+		test.log(LogStatus.INFO,"Verificar la redireccion de la pagina" );
 		WaitToClikByXpath(t5XpathLogin,20);
 		driver.findElement(By.xpath(t5XpathLogin)).sendKeys(Keys.ENTER);
 		TakeScreenShot("Login_1");

@@ -36,7 +36,7 @@ public class ForgotPassword extends BaseClass {
 		driver.findElement(By.xpath(t4XpathAceptar)).click();
 		time.sleep(3);
 		
-		test.log(LogStatus.INFO,"Verificar la existencia del boton de aceptar" );
+		test.log(LogStatus.INFO,"Verificar la existencia del texto" );
 		WaitToClikByXpath(t7XpathTexto,10);
 		driver.findElement(By.xpath(t7XpathTexto)).click();
 		time.sleep(3);
@@ -44,12 +44,12 @@ public class ForgotPassword extends BaseClass {
 		driver.switchTo().newWindow(WindowType.TAB);
 		driver.get("https://www.gmail.com/mail/help/intl/es/about.html?iframe");	
 		
-		test.log(LogStatus.INFO,"Verificar la existencia del boton de aceptar" );
+		test.log(LogStatus.INFO,"Verificar la redireccion a Gmail" );
 		WaitToClikByXpath(GmailButton,10);
 		driver.findElement(By.xpath(GmailButton)).click(); 
 		time.sleep(3);
 		  
-		test.log(LogStatus.INFO,"Verificar la existencia del boton de aceptar" );
+		test.log(LogStatus.INFO,"Verificar el ingreso del correo" );
 		WaitToClikByXpath(GmailCorreo,10);
 		driver.findElement(By.xpath(GmailCorreo)).sendKeys(email,Keys.ENTER);
 		SwitchToOriginalWindows();
