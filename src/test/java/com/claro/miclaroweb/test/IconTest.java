@@ -20,17 +20,18 @@ public class IconTest extends BaseClass {
 		OriginalWindows = driver.getWindowHandle();//Toma el valor de la pagina del login y lo guarda en una variable llamada original window
 		test = report.startTest("Iconos");
 	}
-	 @Test(priority=0, dataProvider="IconTestProvider",dataProviderClass=IconTestProvider.class) 
-	 public void IconTest(List<Parameter>icons) throws InterruptedException { 
-	  test.log(LogStatus.INFO,"Probar iconos"); int count=0; for(Parameter icono : icons) {
-	  test.log(LogStatus.INFO, "Verificar que existe el enlace: " +
-	  icono.getValue()); WaitToClikByXpath(icono.getValue(), 10);
-	  driver.findElement(By.xpath(icono.getValue())).sendKeys(Keys.ENTER);
-	  time.sleep(2);
-	  test.log(LogStatus.INFO, "Verifica enlace: " + String.valueOf(count));
-	  TakeScreenShot("Icon_"+ String.valueOf(count));
-	  SwitchToOriginalWindows();  
-	  count++; } 
+	@Test(priority=0, dataProvider="IconTestProvider",dataProviderClass=IconTestProvider.class) 
+	public void IconTest(List<Parameter>icons) throws InterruptedException { 
+		test.log(LogStatus.INFO,"Probar iconos"); 
+		int count=0; for(Parameter icono : icons) {
+		test.log(LogStatus.INFO, "Verificar que existe el enlace: " +
+		icono.getValue()); WaitToClikByXpath(icono.getValue(), 10);
+		driver.findElement(By.xpath(icono.getValue())).sendKeys(Keys.ENTER);
+		time.sleep(2);
+		test.log(LogStatus.INFO, "Verifica enlace: " + String.valueOf(count));
+		TakeScreenShot("Icon_"+ String.valueOf(count));
+		SwitchToOriginalWindows();  
+		count++; } 
 	  }
 		@Test(priority= 1, dataProvider="IconModalTestProvider2", dataProviderClass=IconTestProvider.class)		
 		public void IconModalTest2(String t3XpathContratarServicio, String t3XpathCotizador,String t3XpathCasaMegas) throws InterruptedException
