@@ -1,14 +1,12 @@
 package com.claro.miclaroweb.test;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WindowType;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import com.claro.miclaroweb.providers.ForgotPasswordProvider;
-import com.claro.miclaroweb.providers.LoginProvider;
 import com.relevantcodes.extentreports.LogStatus;
 
 public class ForgotPassword extends BaseClass {
