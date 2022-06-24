@@ -18,7 +18,7 @@ public class DataProfile extends BaseClass{
 	@Test(priority= 0, dataProvider="ModifyTestProvider", dataProviderClass=DataProfileProvider.class)		
 	public void ModifyTestProvider(String t5XpathAncla1,String t5XpathDatosPerfil,String t5XpathNombre,String t5XpathGuardar,String t5XpathCerrar,String Name) throws InterruptedException
 	{
-		time.sleep(6);
+		time.sleep(7);
 		test.log(LogStatus.INFO, "Verificar enlace a los datos");
 		WaitToClikByXpath(t5XpathAncla1, 20);		  
 		driver.findElement(By.xpath(t5XpathAncla1)).click();
@@ -26,7 +26,6 @@ public class DataProfile extends BaseClass{
 		test.log(LogStatus.INFO, "Verificar el enlace a los datos de informacion");
 		WaitToClikByXpath(t5XpathAncla1, 20);		  
 		driver.findElement(By.xpath(t5XpathDatosPerfil)).click();
-		time.sleep(5);
 		
 		test.log(LogStatus.INFO, "Verificar la existencia de el textfield para el nombre y borra lo ya ingresado");
 		WaitToClikByXpath(t5XpathNombre, 20);		  

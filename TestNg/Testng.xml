@@ -36,9 +36,16 @@
 				<class name="com.claro.miclaroweb.test.Password">				
 				</class>
 			</classes>
-		</test><test name="Mobile">
+		</test>
+		<test name="Mobile">
 			<classes>
 				<class name="com.claro.miclaroweb.test.MobileServices">				
+				</class>
+			</classes>
+		</test>
+		<test name="Paquetes">
+			<classes>
+				<class name="com.claro.miclaroweb.test.ComprarPaquete">				
 				</class>
 			</classes>
 		</test>
@@ -48,5 +55,40 @@
 				</class>
 			</classes>
 		</test>
-		
+		<test name="Pay">
+			<classes>
+				<class name="com.claro.miclaroweb.test.Pay">				
+				</class>
+			</classes>
+		</test>
+			<test name="facturas">
+			<classes>
+				<class name="com.claro.miclaroweb.test.Facturas">				
+				</class>
+			</classes>
+		</test>
+		<test name="Debito">
+			<classes>
+				<class name="com.claro.miclaroweb.test.Debito">				
+				</class>
+			</classes>
+		</test>
+		<test name="Recarga">
+			<classes>
+				<class name="com.claro.miclaroweb.test.Recargas">				
+				</class>
+			</classes>
+		</test>	
+		<test name="Tienda">
+			<classes>
+				<class name="com.claro.miclaroweb.test.TiendaClaro">				
+				</class>
+			</classes>
+		</test>	
+		<test name="Atencion">
+			<classes>
+				<class name="com.claro.miclaroweb.test.Atencion">				
+				</class>
+			</classes>
+		</test>	
 </suite>

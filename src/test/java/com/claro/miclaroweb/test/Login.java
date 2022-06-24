@@ -31,5 +31,6 @@ public class Login extends BaseClass{
 		WaitToClikByXpath(t5XpathLogin,20);
 		driver.findElement(By.xpath(t5XpathLogin)).sendKeys(Keys.ENTER);
 		TakeScreenShot("Login_1");
+		time.sleep(3);
 	}
 }

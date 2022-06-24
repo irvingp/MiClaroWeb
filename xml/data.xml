@@ -5,4 +5,7 @@
 	<parameter name="password" value="Eloyscar5"/>
 	<parameter name="OriginalName" value="Scarleth Melendez"/>
 	<parameter name="Name" value="Wilmer Martinez"/>
+	<parameter name="Direccion" value="Bosques del matazano 3 pasaje los izotes"/>
+	<parameter name="RUC" value="0296537341 001"/>
+	
 </data>

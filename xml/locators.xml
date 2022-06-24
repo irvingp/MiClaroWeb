@@ -50,16 +50,42 @@
 	<parameter name="t5XpathAncla2" value="//a[@class='ancla1' and text()='Mis Servicios']"/>
 	<parameter name="t5XpathServiciosMoviles" value="//a[@class='Link-item link' and text()='Servicios Móviles']"/>
 	
+	<parameter name="t5XpathComprarPaquete" value="//a[@class='btn btnBlancoRojo' and text()='Comprar Paquete']"/>
+	<parameter name="t5XpathComprar" value="//div[@class='btn btnTransGris' and text()='Comprar']"/>
+	<parameter name="t5XpathNombre" value="//input[@id='mcw-name']"/>
+	<parameter name="t5XpathRUC" value="//input[@id='mcw-tax-id']"/>
+	<parameter name="t5XpathDireccion" value="//input[@id='mcw-address']"/>
+	<parameter name="t5XpathEmail" value="//input[@id='mcw-email']"/>
+	
 	<parameter name="t5XpathClaroHogar" value="//a[@class='Link-item link' and text()='Claro Hogar']"/>
+	<parameter name="t5XpathPagarFactura" value="//a[@class='btn btnPrimario' and text()='Pagar Factura']"/>
+	<parameter name="t5XpathSelect" value="//label[@class='flex flex-col flex-grow py-4 select-none']"/>
+	<parameter name="t5XpathPagar" value="//button[@class='w-full mx-2 btn btn--primary btn--outlined']"/>
 	
 	<parameter name="t5XpathAncla3" value="//a[@class='ancla1' and text()='Pagos y Facturas']"/>
 	<parameter name="t5XpathFacturas" value="//a[@class='Link-item link' and text()='Mis facturas']"/>
+	<parameter name="t5XpathTextFacturas" value="//div[@class='consSectTitle']//h2[text()='Mis Facturas']"/>
+	<parameter name="t5XpathTextFiltros" value="//div[@class='boxBillsFilter']//h3[text()='Filtrar por:']"/>
+	<parameter name="t5XpathTextFiltroFacturas" value="//fieldset[@class='large']//label[text()='Filtrar facturas por:']"/>
+	<parameter name="t5XpathLimpiarFiltros" value="//button[@class='btn btnFlatText']"/>
+	
 	<parameter name="t5XpathDebito" value="//a[@class='Link-item link' and text()='Débito Automático']"/>
-	<parameter name="t5XpathAncla4" value="//a[@class='ancla1' and text()='Mis Servicios']"/>
+	<parameter name="t5XpathCheck" value="//input[@class='mx-2 checkbox checkbox--secondary checkbox--rounded-half']"/>
+	<parameter name="t5XpathTextMisFacturas" value="//div[@class='w-full max-w-6xl']//h1[text()='Mis Facturas']"/>
+	
+	<parameter name="t5XpathAncla4" value="//a[@class='ancla1' and text()='Comprar']"/>
 	<parameter name="t5XpathRecargas" value="//a[@class='Link-item link' and text()='Recargas y Paquetes']"/>
-	<parameter name="t5XpathAncla5" value="//a[@class='ancla1' and text()='Pagos y Facturas']"/>
+	
+	<parameter name="t5XpathAncla5" value="//a[@class='ancla1' and text()='Ayuda']"/>
 	<parameter name="t5XpathTienda" value="//a[@class='Link-item link' and text()='Tiendas Claro']"/>
+	<parameter name="t5XpathSelect2" value="//span[@class='select']"/>
+	<parameter name="t5XpathBuscar" value="//button[@class='btn btnTransBlancoAzul']"/>
+	
 	<parameter name="t5XpathAtencion" value="//a[@class='Link-item link' and text()='Canales de Atención']"/>
+	<parameter name="t5XpathBot" value="//a[@class='btn btnBlancoRojo clsChat']"/>
+	<parameter name="t5XpathWa" value="//a[@class='btn btnBlancoRojo clsWhatsapp']"/>
+	<parameter name="t5XpathContratacion" value="//a[@class='btn btnBlancoRojo clsWhatsapp' and text()='Ir a Tienda en Línea']"/>
+	<parameter name="t5XpathCerrarSesion" value="//a[@class='btn btnTransBlancoNegro']"/>
 
 	<parameter name="t6XpathVentanaBot" value="//a[@class='cChat']"/>
 	<parameter name="t6XpathBot"  value="//div[@class='cChatbotItems']"/>
