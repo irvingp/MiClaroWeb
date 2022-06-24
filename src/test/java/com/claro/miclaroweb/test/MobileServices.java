@@ -19,11 +19,12 @@ public class MobileServices extends BaseClass {
 		time.sleep(5);
 		test.log(LogStatus.INFO, "Verificar enlace a los Servicios");
 		WaitToClikByXpath(t5XpathAncla2, 20);		  
-		driver.findElement(By.xpath(t5XpathAncla2)).click();
+		driver.findElement(By.xpath(t5XpathAncla2)).click();	
 		
 		test.log(LogStatus.INFO, "Verificar el enlace a los datos de servicios moviles");
 		WaitToClikByXpath(t5XpathAncla2, 20);		  
 		driver.findElement(By.xpath(t5XpathServiciosMoviles)).click();
+		TakeScreenShot("Services_1");	
 		time.sleep(5);
 	}
 }

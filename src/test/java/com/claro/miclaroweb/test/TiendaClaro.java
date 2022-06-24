@@ -19,22 +19,24 @@ public class TiendaClaro extends BaseClass{
 	public void TiendaTestProvider(String t5XpathAncla5 ,String t5XpathTienda,String t5XpathSelect2,String t5XpathBuscar) throws InterruptedException
 	{
 		time.sleep(5);
-		test.log(LogStatus.INFO, "Verificar enlace as");
+		test.log(LogStatus.INFO, "Verificar enlace a las tiendas");
 		WaitToClikByXpath(t5XpathAncla5, 20);		  
 		driver.findElement(By.xpath(t5XpathAncla5)).click();
 		
 		time.sleep(5);
-		test.log(LogStatus.INFO, "Verificar enlace as");
+		test.log(LogStatus.INFO, "Verificar enlace a tiendas");
 		WaitToClikByXpath(t5XpathTienda, 20);		  
 		driver.findElement(By.xpath(t5XpathTienda)).click();
+		TakeScreenShot("Tienda_1");	
 		
-		test.log(LogStatus.INFO, "Verificar enlace as");
+		test.log(LogStatus.INFO, "Verificar existencia del select");
 		WaitToClikByXpath(t5XpathSelect2, 20);		  
 		Select Pais = new Select(driver.findElement(By.xpath(t5XpathSelect2)));
 		Pais.selectByVisibleText("Leon");
 		
-		test.log(LogStatus.INFO, "Verificar enlace as");
+		test.log(LogStatus.INFO, "Verificar clickeo de boton");
 		WaitToClikByXpath(t5XpathBuscar, 20);		  
 		driver.findElement(By.xpath(t5XpathBuscar)).click();
+		TakeScreenShot("Tienda_2");
 	}
 }

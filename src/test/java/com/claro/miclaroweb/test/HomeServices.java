@@ -19,5 +19,6 @@ public class HomeServices extends BaseClass {
 		test.log(LogStatus.INFO, "Verificar enlace a los Servicios");
 		WaitToClikByXpath(t5XpathClaroHogar, 20);		  
 		driver.findElement(By.xpath(t5XpathClaroHogar)).click();
+		TakeScreenShot("Home_1");	
 	}
 }

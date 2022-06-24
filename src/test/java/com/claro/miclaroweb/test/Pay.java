@@ -19,17 +19,18 @@ public class Pay extends BaseClass{
 	public void PayTestProvider(String t5XpathPagarFactura ,String t5XpathSelect,String t5XpathPagar) throws InterruptedException
 	{
 		time.sleep(5);
-		test.log(LogStatus.INFO, "Verificar enlace as");
+		test.log(LogStatus.INFO, "Verificar enlace a pago de factura");
 		WaitToClikByXpath(t5XpathPagarFactura, 20);		  
 		driver.findElement(By.xpath(t5XpathPagarFactura)).click();
 		
-		test.log(LogStatus.INFO, "Verificar enlace as");
+		test.log(LogStatus.INFO, "Verificar existencia de boton de pago");
 		WaitToClikByXpath(t5XpathPagarFactura, 20);		  
 		driver.findElement(By.xpath(t5XpathSelect)).click();
 		
-		test.log(LogStatus.INFO, "Verificar enlace as");
+		test.log(LogStatus.INFO, "Verificar click en pago de factura");
 		WaitToClikByXpath(t5XpathPagar, 20);		  
 		driver.findElement(By.xpath(t5XpathPagar)).click();
+		TakeScreenShot("Pay_1");	
 	}
 
 }

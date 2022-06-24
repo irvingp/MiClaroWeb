@@ -44,7 +44,7 @@ public class IconTest extends BaseClass {
 			WaitToClikByXpath(t3XpathContratarServicio, 10);		  
 			driver.findElement(By.xpath(t3XpathCotizador)).sendKeys(Keys.ENTER);
 			time.sleep(3);
-			TakeScreenShot("Login_13");
+			TakeScreenShot("Icon_10");
 			
 			SwitchToOriginalWindows();
 			
@@ -56,7 +56,7 @@ public class IconTest extends BaseClass {
 			WaitToClikByXpath(t3XpathContratarServicio, 10);		  
 			driver.findElement(By.xpath(t3XpathCasaMegas)).sendKeys(Keys.ENTER);
 			time.sleep(3);
-			TakeScreenShot("Login_14");
+			TakeScreenShot("Icon_11");
 			SwitchToOriginalWindows();
 		}
 		@Test(priority= 2, dataProvider="IconModalTestProvider", dataProviderClass=IconTestProvider.class)
@@ -71,7 +71,7 @@ public class IconTest extends BaseClass {
 			WaitToClikByXpath(XpathDescargaFactura, 10);		  
 			driver.findElement(By.xpath(XpathFormularioFactura)).sendKeys(Keys.ENTER);
 			time.sleep(3);
-			TakeScreenShot("Login_15");
+			TakeScreenShot("Icon_12");
 			SwitchToOriginalWindows();
 		}
 }

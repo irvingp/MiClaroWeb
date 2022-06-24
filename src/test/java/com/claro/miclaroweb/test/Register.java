@@ -25,6 +25,7 @@ public class Register extends BaseClass {
 		test.log(LogStatus.INFO,"Verificar la existencia del modal" );
 		WaitToClikByXpath(t7XpathEmail,10);
 		driver.findElement(By.xpath(t7XpathEmail)).sendKeys(email);
+		TakeScreenShot("Register_1");	
 		time.sleep(3);
 		
 		test.log(LogStatus.INFO,"Verificar la existencia del modal" );

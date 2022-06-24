@@ -19,18 +19,15 @@ public class Bot extends BaseClass {
 		test.log(LogStatus.INFO,"Verificar la existencia del boton de bot" );
 		WaitToClikByXpath(t6XpathVentanaBot,10);
 		driver.findElement(By.xpath(t6XpathVentanaBot)).click();
-		time.sleep(3);
-		TakeScreenShot("Login_2");
+		TakeScreenShot("Bot_1");
 		
 		test.log(LogStatus.INFO,"Verificar la existencia del enlace al bot" );
 		WaitToClikByXpath(t6XpathVentanaBot,10);
 		driver.findElement(By.xpath(t6XpathBot)).click();
-		time.sleep(3);
 		SwitchToOriginalWindows();
 		
 		test.log(LogStatus.INFO,"Verificar la existencia del cierre de la ventana" );
 		WaitToClikByXpath(t6XpathVentanaBot,10);
-		driver.findElement(By.xpath(t6XpathCerrarBot)).click();
-		time.sleep(3);			
+		driver.findElement(By.xpath(t6XpathCerrarBot)).click();		
 	}
 }

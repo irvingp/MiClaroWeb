@@ -23,23 +23,20 @@ public class ForgotPassword extends BaseClass {
 		test.log(LogStatus.INFO,"Verificar la existencia del boton de olvide contrasena" );
 		WaitToClikByXpath(t4XpathOlvideContrasena,10);
 		driver.findElement(By.xpath(t4XpathOlvideContrasena)).click();
-		time.sleep(3);
 		
 		test.log(LogStatus.INFO,"Verificar la existencia del modal" );
 		WaitToClikByXpath(t4XpathEmail,10);
 		driver.findElement(By.xpath(t4XpathEmail)).sendKeys(email);
-		TakeScreenShot("Login_16");	
-		time.sleep(3);
+		TakeScreenShot("Recover_1");	
 		
 		test.log(LogStatus.INFO,"Verificar la existencia del boton de aceptar" );
 		WaitToClikByXpath(t4XpathAceptar,10);
 		driver.findElement(By.xpath(t4XpathAceptar)).click();
-		time.sleep(3);
 		
 		test.log(LogStatus.INFO,"Verificar la existencia del texto" );
 		WaitToClikByXpath(t7XpathTexto,10);
 		driver.findElement(By.xpath(t7XpathTexto)).click();
-		time.sleep(3);
+		TakeScreenShot("Recover_2");	
 			
 		driver.switchTo().newWindow(WindowType.TAB);
 		driver.get("https://www.gmail.com/mail/help/intl/es/about.html?iframe");	
@@ -47,12 +44,10 @@ public class ForgotPassword extends BaseClass {
 		test.log(LogStatus.INFO,"Verificar la redireccion a Gmail" );
 		WaitToClikByXpath(GmailButton,10);
 		driver.findElement(By.xpath(GmailButton)).click(); 
-		time.sleep(3);
 		  
 		test.log(LogStatus.INFO,"Verificar el ingreso del correo" );
 		WaitToClikByXpath(GmailCorreo,10);
 		driver.findElement(By.xpath(GmailCorreo)).sendKeys(email,Keys.ENTER);
 		SwitchToOriginalWindows();
-		time.sleep(3);
 	}
 }

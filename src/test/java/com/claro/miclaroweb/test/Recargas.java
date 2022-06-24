@@ -17,13 +17,14 @@ public class Recargas extends BaseClass{
 	public void RecargaTestProvider(String t5XpathAncla4 ,String t5XpathRecargas) throws InterruptedException
 	{
 		time.sleep(5);
-		test.log(LogStatus.INFO, "Verificar enlace as");
+		test.log(LogStatus.INFO, "Verificar enlace a las recargas");
 		WaitToClikByXpath(t5XpathAncla4, 20);		  
 		driver.findElement(By.xpath(t5XpathAncla4)).click();
 		
 		time.sleep(5);
-		test.log(LogStatus.INFO, "Verificar enlace as");
+		test.log(LogStatus.INFO, "Verificar enlace a hacer una recarga");
 		WaitToClikByXpath(t5XpathRecargas, 20);		  
 		driver.findElement(By.xpath(t5XpathRecargas)).click();
+		TakeScreenShot("Recarga_1");	
 	}
 }

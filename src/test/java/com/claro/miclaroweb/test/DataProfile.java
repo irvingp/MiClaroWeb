@@ -26,6 +26,7 @@ public class DataProfile extends BaseClass{
 		test.log(LogStatus.INFO, "Verificar el enlace a los datos de informacion");
 		WaitToClikByXpath(t5XpathAncla1, 20);		  
 		driver.findElement(By.xpath(t5XpathDatosPerfil)).click();
+		TakeScreenShot("Profile_1");	
 		
 		test.log(LogStatus.INFO, "Verificar la existencia de el textfield para el nombre y borra lo ya ingresado");
 		WaitToClikByXpath(t5XpathNombre, 20);		  
@@ -38,7 +39,7 @@ public class DataProfile extends BaseClass{
 		test.log(LogStatus.INFO, "Verificar enlace de guardado");
 		WaitToClikByXpath(t5XpathGuardar, 20);		  
 		driver.findElement(By.xpath(t5XpathGuardar)).click();
-		TakeScreenShot("Login_2");
+		TakeScreenShot("Profile_2");
 		
 		test.log(LogStatus.INFO, "Verificar enlace de guardado");
 		WaitToClikByXpath(t5XpathCerrar, 20);		  
@@ -66,6 +67,6 @@ public class DataProfile extends BaseClass{
 	  
 	  test.log(LogStatus.INFO, "Verifica textfield de correo");
 	  WaitToClikByXpath(t5XpathCorreo,20);
-	  Assert.assertEquals(driver.findElement(By.xpath(t5XpathCorreo)).isDisplayed(), true); TakeScreenShot("Login_3"); 
+	  Assert.assertEquals(driver.findElement(By.xpath(t5XpathCorreo)).isDisplayed(), true); TakeScreenShot("Profile_3"); 
 	  }
 }

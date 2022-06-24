@@ -20,5 +20,6 @@ public class Debito extends BaseClass{
 		test.log(LogStatus.INFO, "Verificar el enlace a los servicios de factura");
 		WaitToClikByXpath(t5XpathDebito, 20);		  
 		driver.findElement(By.xpath(t5XpathDebito)).click();
+		TakeScreenShot("Debito_1");	
 	}
 }

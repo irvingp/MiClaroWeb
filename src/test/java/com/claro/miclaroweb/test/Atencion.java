@@ -21,6 +21,7 @@ public class Atencion extends BaseClass{
 		test.log(LogStatus.INFO, "Verificar enlace as");
 		WaitToClikByXpath(t5XpathAtencion, 20);		  
 		driver.findElement(By.xpath(t5XpathAtencion)).click();
+		TakeScreenShot("Atencion_1");	
 		
 		test.log(LogStatus.INFO, "Verificar enlace as");
 		WaitToClikByXpath(t5XpathBot, 20);		  
@@ -30,12 +31,12 @@ public class Atencion extends BaseClass{
 		test.log(LogStatus.INFO, "Verificar enlace as");
 		WaitToClikByXpath(t5XpathWa, 20);		  
 		driver.findElement(By.xpath(t5XpathWa)).click();
-		SwitchToOriginalWindows(); 
+		SwitchToOriginalWindows();
 		
 		test.log(LogStatus.INFO, "Verificar enlace as");
 		WaitToClikByXpath(t5XpathContratacion, 20);		  
 		driver.findElement(By.xpath(t5XpathContratacion)).click();
-		SwitchToOriginalWindows(); 
+		SwitchToOriginalWindows(); 	
 		
 		test.log(LogStatus.INFO, "Verificar enlace as");
 		WaitToClikByXpath(t5XpathCerrarSesion, 20);		  

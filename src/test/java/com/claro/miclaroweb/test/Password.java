@@ -47,7 +47,7 @@ public class Password extends BaseClass{
 		  test.log(LogStatus.INFO, "Verificar la existencia de textfield confirmar contraseña");
 		  WaitToClikByXpath(t5XpathConfirm,20);
 		  Assert.assertEquals(driver.findElement(By.xpath(t5XpathConfirm)).isDisplayed(), true);
-		  TakeScreenShot("Login_3"); 
+		  TakeScreenShot("Password_1"); 
 		  }
 	}
 

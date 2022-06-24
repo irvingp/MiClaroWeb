@@ -24,6 +24,7 @@ public class Facturas extends BaseClass{
 		test.log(LogStatus.INFO, "Verificar el enlace a los servicios de factura");
 		WaitToClikByXpath(t5XpathAncla3, 20);		  
 		driver.findElement(By.xpath(t5XpathFacturas)).click();
+		TakeScreenShot("Factura_1");	
 		
 		test.log(LogStatus.INFO,"Verificar la existencia de texto Mis Facturas");
 		WaitToClikByXpath(t5XpathTextFacturas,20);
