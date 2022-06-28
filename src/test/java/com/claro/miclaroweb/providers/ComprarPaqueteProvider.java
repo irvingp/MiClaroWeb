@@ -12,15 +12,7 @@ public class ComprarPaqueteProvider extends Provider{
 		return new Object[][] {
 			{
 				GetParamLocatorsByName("t5XpathComprarPaquete").getValue(),
-				GetParamLocatorsByName("t5XpathComprar").getValue(),
-				GetParamLocatorsByName("t5XpathNombre").getValue(),
-				GetParamLocatorsByName("t5XpathRUC").getValue(),
-				GetParamLocatorsByName("t5XpathDireccion").getValue(),
-				GetParamLocatorsByName("t5XpathEmail").getValue(),
-				GetParamDataByName("Name").getValue(),
-				GetParamDataByName("RUC").getValue(),
-				GetParamDataByName("Direccion").getValue(),
-				GetParamDataByName("email").getValue(),
+				GetParamLocatorsByName("t5XpathComprar").getValue()
 			}
 		};
 	}

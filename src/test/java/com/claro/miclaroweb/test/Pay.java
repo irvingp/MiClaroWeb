@@ -23,8 +23,7 @@ public class Pay extends BaseClass{
 		WaitToClikByXpath(t5XpathPagarFactura, 20);		  
 		driver.findElement(By.xpath(t5XpathPagarFactura)).click();
 		
-		test.log(LogStatus.INFO, "Verificar existencia de boton de pago");
-		WaitToClikByXpath(t5XpathPagarFactura, 20);		  
+		test.log(LogStatus.INFO, "Verificar existencia de boton de pago");		  
 		driver.findElement(By.xpath(t5XpathSelect)).click();
 		
 		test.log(LogStatus.INFO, "Verificar click en pago de factura");
