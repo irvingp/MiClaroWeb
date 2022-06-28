@@ -98,7 +98,7 @@
 	
 	<parameter name="t7XpathButtonRegister" value="//a[@class='btn btnBlancoRojo']"/>
 	<parameter name="t7XpathEmail" value="//input[@name='email']"/>
-	<parameter name="t7XpathCheck" value="//div[@class='checkmark']"/>
+	<parameter name="t7XpathCheck" value="//form//fieldset//div//div"/>
 	<parameter name="t7XpathSubmit" value="//input[@class='btn btnBlancoRojo btnContinuar']"/>
 	<parameter name="t7XpathTexto" value="//div[@class='customLitteFormText']//h2[text()='Código de seguridad']"/>
 	
