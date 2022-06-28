@@ -14,7 +14,8 @@ public class TiendaClaroProvider extends Provider{
 				GetParamLocatorsByName("t5XpathAncla5").getValue(),
 				GetParamLocatorsByName("t5XpathTienda").getValue(),
 				GetParamLocatorsByName("t5XpathSelect2").getValue(),
-				GetParamLocatorsByName("t5XpathBuscar").getValue()
+				GetParamLocatorsByName("t5XpathBuscar").getValue(),
+				GetParamLocatorsByName("t5XpathMapa").getValue()
 			}
 		};	
 	}

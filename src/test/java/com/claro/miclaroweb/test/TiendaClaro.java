@@ -1,6 +1,7 @@
 package com.claro.miclaroweb.test;
 
 import org.openqa.selenium.By;
+import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import org.openqa.selenium.support.ui.Select;
@@ -16,7 +17,7 @@ public class TiendaClaro extends BaseClass{
 		test = report.startTest("Tienda");
 	}
 	@Test(priority= 0, dataProvider="TiendaTestProvider", dataProviderClass=TiendaClaroProvider.class)	
-	public void TiendaTestProvider(String t5XpathAncla5 ,String t5XpathTienda,String t5XpathSelect2,String t5XpathBuscar) throws InterruptedException
+	public void TiendaTestProvider(String t5XpathAncla5 ,String t5XpathTienda,String t5XpathSelect2,String t5XpathBuscar,String t5XpathMapa) throws InterruptedException
 	{
 		time.sleep(5);
 		test.log(LogStatus.INFO, "Verificar enlace a las tiendas");
@@ -37,6 +38,11 @@ public class TiendaClaro extends BaseClass{
 		test.log(LogStatus.INFO, "Verificar clickeo de boton");
 		WaitToClikByXpath(t5XpathBuscar, 20);		  
 		driver.findElement(By.xpath(t5XpathBuscar)).click();
+		
+		test.log(LogStatus.INFO, "Verificar clickeo de mapa");
+		WaitToClikByXpath(t5XpathBuscar, 20);		  
+		Assert.assertEquals(driver.findElement(By.xpath(t5XpathBuscar)).isDisplayed(), true);
 		TakeScreenShot("Tienda_2");
+		
 	}
 }

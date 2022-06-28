@@ -21,7 +21,6 @@ public class Recargas extends BaseClass{
 		WaitToClikByXpath(t5XpathAncla4, 20);		  
 		driver.findElement(By.xpath(t5XpathAncla4)).click();
 		
-		time.sleep(5);
 		test.log(LogStatus.INFO, "Verificar enlace a hacer una recarga");
 		WaitToClikByXpath(t5XpathRecargas, 20);		  
 		driver.findElement(By.xpath(t5XpathRecargas)).click();
