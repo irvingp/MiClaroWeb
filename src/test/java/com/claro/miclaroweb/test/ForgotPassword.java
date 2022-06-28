@@ -1,10 +1,7 @@
 package com.claro.miclaroweb.test;
 
 import org.openqa.selenium.By;
-<<<<<<< HEAD
-=======
 import org.openqa.selenium.JavascriptExecutor;
->>>>>>> 6505176920b367e3f51db02f1c683e4ad75c9897
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
