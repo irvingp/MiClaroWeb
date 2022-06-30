@@ -13,6 +13,7 @@ public class PayProvider extends Provider{
 			{
 				GetParamLocatorsByName("t5XpathPagarFactura").getValue(),
 				GetParamLocatorsByName("t5XpathSelect").getValue(),
+				GetParamLocatorsByName("t5XpathTextoPrueba").getValue(),
 				GetParamLocatorsByName("t5XpathPagar").getValue()
 			}
 		};	

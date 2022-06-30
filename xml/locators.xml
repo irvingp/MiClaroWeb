@@ -64,6 +64,7 @@
 	<parameter name="t5XpathClaroHogar" value="//a[@class='Link-item link' and text()='Claro Hogar']"/>
 	<parameter name="t5XpathPagarFactura" value="//a[@class='btn btnPrimario' and text()='Pagar Factura']"/>
 	<parameter name="t5XpathSelect" value="//div[@class='flex justify-between gap-2']//input"/>
+	<parameter name="t5XpathTextoPrueba" value="//div//h2[text()=' Pago de Factura ']"/>
 	<parameter name="t5XpathPagar" value="//button[@class='w-full mx-2 btn btn--primary btn--outlined']"/>
 	
 	<parameter name="t5XpathAncla3" value="//a[@class='ancla1' and text()='Pagos y Facturas']"/>
