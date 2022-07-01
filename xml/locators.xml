@@ -29,6 +29,7 @@
 	
 	<parameter name="t5XpathAgregarServicio" value="//a[@class='btn btnBlancoRojo withIco']//span[text()='Agregar Servicio Móvil']"/>
 	
+	<parameter name="t5XpathAgregarServicioHogar" value="//a[@class='btn btnBlancoRojo withIco']//span[text()='Agregar servicio Claro Hogar ']"/>
 	
 	<parameter name="t5XpathAncla1" value="//a[@class='ancla1' and text()='Mi Perfil']"/>
 	<parameter name="t5XpathDatosPerfil" value="//a[@class='Link-item link' and text()='Datos de perfil']"/>
