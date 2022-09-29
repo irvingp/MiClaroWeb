@@ -41,6 +41,7 @@ public class Atencion extends BaseClass{
 		test.log(LogStatus.INFO, "Verificar enlace a Cerrar sesion");
 		WaitToClikByXpath(t5XpathCerrarSesion, 20);		  
 		driver.findElement(By.xpath(t5XpathCerrarSesion)).click();
+		SwitchToOriginalWindows(); 
 		time.sleep(5);
 		
 	}

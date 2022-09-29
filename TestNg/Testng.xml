@@ -31,6 +31,12 @@
 				</class>
 			</classes>
 		</test>
+		<test name="AddHomeServices">
+			<classes>
+				<class name="com.claro.miclaroweb.test.AgregarServicioHogar">				
+				</class>
+			</classes>
+		</test>
 		<test name="Profile">
 			<classes>
 				<class name="com.claro.miclaroweb.test.DataProfile">				
