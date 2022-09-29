@@ -2,3 +2,4 @@
 *.html
 /ScreenShot/*.*
 /target
+/src/test/resources/*.*
