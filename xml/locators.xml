@@ -2,24 +2,25 @@
 <locators>	
 	
 	<parameter name="t1XpathPagos" value="//a[@id='Pago-Factura-503']"/>
-	<parameter name="t1XpathRecargas" value="//a[@id='Compra-Recargas-Superpacks-503']"/>
-	<parameter name="t1XpathDescargarApp" value="//a[@id='Descaga-Mi-Claro-App-505']"/>
-	<parameter name="t1XpathTiendaLinea" value="//a[@id='Tienda-En-Linea-505']"/>
-	<parameter name="t1XpathPromociones" value="//a[@id='Promociones-505']"/>
-	<parameter name="t1XpathSaldo" value="//a[@id='Envio-De-Saldo-505']"/>
-	<parameter name="t1XpathAtencion" value="//a[@id='Atencion-WhatsApp-505']"/>
-	<parameter name="t1XpathMusica" value="//a[@id='Claro-Musica-505']"/>
-	<parameter name="t1XpathVideo" value="//a[@id='Claro-Video-505']"/>
-	<parameter name="t1XpathTv" value="//a[@id='Claro-TV-505']"/>
+	<parameter name="t1XpathRecargas" value="//a[@id='Compra-Recargas-Superpacks-502']"/>
+	<parameter name="t1XpathDescargarApp" value="//a[@id='Descaga-Mi-Claro-App-502']"/>
 	
-	<parameter name="t2XpathDescargarFactura" value="//a[@id='Descarga-Factura-505']"/>
-	<parameter name="t2XpathFormularioFactura" value="//a[@id='factura-hogar-505']"/>
+	<parameter name="t1XpathTiendaLinea" value="//a[@id='Tienda-En-Linea-502']"/>
+	<parameter name="t1XpathPromociones" value="//a[@id='promociones-502']"/>
+	<parameter name="t1XpathSaldo" value="//a[@id='Envio-De-Saldo-502']"/>	
+	<parameter name="t1XpathAtencion" value="//a[@id='Atencion-WhatsApp-502']"/>
+	<parameter name="t1XpathMusica" value="//a[@id='Claro-Musica-502']"/>
+	<parameter name="t1XpathVideo" value="//a[@id='Claro-Video-502']"/>
+	<parameter name="t1XpathTv" value="//a[@id='Claro-TV-502']"/>
 	
-	<parameter name="t3XpathContratarServicio" value="//a[@id='Contrato-Servicio-505']"/>
-	<parameter name="t3XpathCotizador" value="//a[@id='Cotizador-505']"/>
-	<parameter name="t3XpathCasaMegas" value="//a[@id='Casa-Megas-505']"/>
+	<parameter name="t2XpathDescargarFactura" value="//a[@id='Descarga-Factura-504v']"/>
+	<parameter name="t2XpathFormularioFactura" value="//a[@id='servicios-claro-hogar']"/>
 	
-	<parameter name="t4XpathOlvideContrasena" value="//a[@class='textLink']"/>
+	<parameter name="t3XpathContratarServicio" value="//a[@id='Contrato-Servicio-502']"/>
+	<parameter name="t3XpathCotizador" value="//a[@id='Cotizador-502']"/>
+	<parameter name="t3XpathCasaMegas" value="//a[@id='Casa-Megas-504']"/>
+	
+	<parameter name="t4XpathOlvideContrasena" value="//*[@id='root']//div[2]/section/section/main/div/section/div/div/div[2]/div/form/fieldset[3]"/>
 	<parameter name="t4XpathEmail" value="//input[@name='email']"/>
 	<parameter name="t4XpathAceptar" value="//button[@class='btn btnBlancoRojo']"/>
 	

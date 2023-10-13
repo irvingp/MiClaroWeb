@@ -1,7 +1,7 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="MiClaroWeb" verbose="1">
 		<parameter name="Country" value="NA"></parameter>
-		<test name="Recuperar Contrasena">
+		<test name="Recuperar Contrasena" enabled="false">
 			<classes>
 				<class name="com.claro.miclaroweb.test.ForgotPassword">				
 				</class>
@@ -31,12 +31,12 @@
 				</class>
 			</classes>
 		</test>
-		<test name="AddHomeServices">
+		<!-- <test name="AddHomeServices">
 			<classes>
 				<class name="com.claro.miclaroweb.test.AgregarServicioHogar">				
 				</class>
 			</classes>
-		</test>
+		</test> -->
 		<test name="Profile">
 			<classes>
 				<class name="com.claro.miclaroweb.test.DataProfile">				

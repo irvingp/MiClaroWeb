@@ -2,7 +2,9 @@ package com.claro.miclaroweb.test;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.WindowType;
+import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -15,12 +17,13 @@ public class ForgotPassword extends BaseClass {
 	public void init()
 	{
 		driver.get("https://miclaroni-uat-v3.tmx-internacional.com/login");
-		OriginalWindows = driver.getWindowHandle();//Toma el valor de la pagina del login y lo guarda en una variable llamada original window
+		OriginalWindows = driver.getWindowHandle(); //Toma el valor de la pagina del login y lo guarda en una variable llamada original window
 		test = report.startTest("Recuperar Contrasena");
 	}
 	@Test(priority = 1, dataProvider="ButtonTestProvider", dataProviderClass=ForgotPasswordProvider.class)
 	public void ButtonTestProvider(String t4XpathOlvideContrasena,String t4XpathEmail,String t4XpathAceptar,String t7XpathTexto,String email,String GmailButton,String GmailCorreo) throws  InterruptedException{
 		test.log(LogStatus.INFO,"Verificar la existencia del boton de olvide contrasena" );
+
 		WaitToClikByXpath(t4XpathOlvideContrasena,10);
 		driver.findElement(By.xpath(t4XpathOlvideContrasena)).click();
 		

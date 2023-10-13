@@ -17,6 +17,10 @@ public class BaseClass extends SeleniumMain {
 	{
 		ChromeOptions options = new ChromeOptions();
 		options.setPageLoadStrategy(PageLoadStrategy.NORMAL);
+		/*
+		 * options.addArguments("--headless"); options.addArguments("--disable-gpu");
+		 * options.addArguments("--disable-dev-shm-usage");
+		 */
 		driver = GetWebInstance(options);
 		driver.manage().window().maximize();
 		SuiteName=context.getSuite().getName();

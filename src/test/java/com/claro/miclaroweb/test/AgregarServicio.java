@@ -19,6 +19,7 @@ public class AgregarServicio extends BaseClass{
 	{
 		time.sleep(5);
 		test.log(LogStatus.INFO, "Verificar enlace a agregar servicio");
+		
 		WaitToClikByXpath(t5XpathAgregarServicio, 20);		  
 		driver.findElement(By.xpath(t5XpathAgregarServicio)).click();
 		

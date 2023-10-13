@@ -1,0 +1,29 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="MiClaroWeb" verbose="1">
+		<parameter name="Country" value="NA"></parameter>
+		<test name="Recuperar Contrasena" enabled="false">
+			<classes>
+				<class name="com.claro.miclaroweb.test.ForgotPassword">				
+				</class>
+			</classes>
+		</test>
+		<test name="Iconos">
+			<classes>
+				<class name="com.claro.miclaroweb.test.IconTest">				
+				</class>
+			</classes>
+		</test>
+		<test name="Bot">
+			<classes>
+				<class name="com.claro.miclaroweb.test.Bot">				
+				</class>
+			</classes>
+		</test>
+		<test name="Login">
+			<classes>
+				<class name="com.claro.miclaroweb.test.Login">				
+				</class>
+			</classes>
+		</test>
+		
+</suite>

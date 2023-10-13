@@ -40,7 +40,6 @@ public class SeleniumMain {
 
 	public void WaitToClikByXpath(String targetResourceXpath, long timeLimitInSeconds) {
 		try {
-
 			@SuppressWarnings("deprecation")
 			WebDriverWait wait = new WebDriverWait(driver, timeLimitInSeconds);
 			wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(targetResourceXpath)));
@@ -54,7 +53,6 @@ public class SeleniumMain {
 
 	public void WaitToClikByCssSelector(String targetResourceXpath, long timeLimitInSeconds) {
 		try {
-
 			@SuppressWarnings("deprecation")
 			WebDriverWait wait = new WebDriverWait(driver, timeLimitInSeconds);
 			wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector(targetResourceXpath)));
